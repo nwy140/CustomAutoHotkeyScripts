@@ -1,3 +1,4 @@
+;https://www.reddit.com/r/AutoHotkey/comments/3eh41w/perfect_ctrl_alt_swap/
 ; NEEDS '*' because LCtrl key-repeat is otherwise interpreted as ALT+LCtrl.
 *LCtrl::
    CtrlTabbed := false`
