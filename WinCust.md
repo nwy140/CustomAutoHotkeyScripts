@@ -15,11 +15,9 @@
 ### Wox 
 - Alt+space mac-like search 
 
-###AutoHotKeys
-## Capslock Desktop Switcher
+### AutoHotKeys
+#### Capslock Desktop Switcher
 - desktop-switcher.ahk
-
-
 
 # Code Monkey AlterEgo
 ## Mobile Dev
