@@ -15,9 +15,16 @@
 ### Wox 
 - Alt+space mac-like search 
 
+### TreeSize Free
+- Tree-Like finder file explorer for windows 
+
+### SharpKeys
+- Swaps Win key and ctrl key
+
 ### AutoHotKeys
 #### Capslock Desktop Switcher
 - desktop-switcher.ahk
+
 
 # Code Monkey AlterEgo
 ## Mobile Dev
