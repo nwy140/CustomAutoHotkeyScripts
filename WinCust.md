@@ -12,12 +12,12 @@
 
 # Desktop Environment
 
-### Wox
-Alt+space mac-like search 
+### Wox 
+- Alt+space mac-like search 
 
 ###AutoHotKeys
 ## Capslock Desktop Switcher
-desktop-switcher.ahk
+- desktop-switcher.ahk
 
 
 
