@@ -27,7 +27,7 @@
 
 ### Terminal/CMD
 Iexplorer
-start iexplore -k "https://tiny.cc/TaskFlow
+start iexplore -k "https://tiny.cc/taskflow"
 
 # Code Monkey AlterEgo
 ## Mobile Dev
