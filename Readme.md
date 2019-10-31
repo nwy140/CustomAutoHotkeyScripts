@@ -31,3 +31,7 @@
 ### Android-Studio (Flutter/React Native)
 ### VS-Code (Flutter/React Native)
 
+# Danger
+## Firefox
+- Disable private browsing:https://www.addictivetips.com/web/disable-private-browsing-firefox/
+
