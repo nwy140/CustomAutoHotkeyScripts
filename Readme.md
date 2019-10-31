@@ -25,6 +25,9 @@
 #### Capslock Desktop Switcher
 - desktop-switcher.ahk
 
+### Terminal/CMD
+Iexplorer
+start iexplore -k "https://tiny.cc/TaskFlow
 
 # Code Monkey AlterEgo
 ## Mobile Dev
