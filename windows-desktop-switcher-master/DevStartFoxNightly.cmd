@@ -1,0 +1,1 @@
+start firefox --kiosk https://tiny.cc/DevStart
