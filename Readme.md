@@ -11,7 +11,8 @@
 ### Github Desktop/GitBash
 
 # Desktop Environment
-
+### QTabBar
+MACOSX finder alternative plugin for windows Explorer 
 ### Wox 
 - Alt+space mac-like search 
 
