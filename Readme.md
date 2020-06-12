@@ -16,16 +16,17 @@ https://cse.google.com/cse?cx=002130668208237555607:olxqvfdcr2d
 ### Github Desktop/GitBash
 
 # Desktop Environment
-### QTabBar
-MACOSX finder alternative plugin for windows Explorer 
-### Wox 
-- Alt+space mac-like search 
-
+### TaskBar X
+MacOSX Dock Alternative for windows
+### PowerToys
+Microsoft's own MACOSX spotlight finder alternative plugin for windows
+### Plastic SCM
+Best version control system for Game Dev that syncs with Git
 ### TreeSize Free
 - Tree-Like finder file explorer for windows 
+### QTabBar
+Enhanced windows explorer
 
-### SharpKeys
-- Swaps Win key and ctrl key
 
 ### AutoHotKeys
 #### Capslock Desktop Switcher
@@ -43,4 +44,12 @@ start iexplore -k "https://tiny.cc/taskflow"
 # Danger
 ## Firefox
 - Disable private browsing:https://www.addictivetips.com/web/disable-private-browsing-firefox/
+
+
+# Removed
+### Wox  (Replaced by powertoys)
+- Alt+space mac-like search 
+### SharpKeys (Replaced by powertoys)
+- Swaps Win key and ctrl key
+
 
