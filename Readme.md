@@ -26,7 +26,8 @@ Best version control system for Game Dev that syncs with Git
 - Tree-Like finder file explorer for windows 
 ### QTabBar
 Enhanced windows explorer
-
+## Win Mute
+https://github.com/lx-s/WinMute
 
 ### AutoHotKeys
 #### Capslock Desktop Switcher
