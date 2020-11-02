@@ -1,0 +1,1 @@
+wsl -d xWSL2 --shutdown
