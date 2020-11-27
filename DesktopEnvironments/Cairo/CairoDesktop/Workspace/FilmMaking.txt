@@ -1,0 +1,57 @@
+https://unity3d.zoom.us/webinar/register/WN_SeUOpFVlQXa9bOBqgkwPSA
+
+Cinemachine
+Timeline
+Post-Processing
+	- Subconciously make you beleive its a movie
+	- Emulate hollywood movie
+HDRP
+	- Realism Pipeline
+	- Best quality features
+URP
+	- Universal Render Stylized Pipeline
+Final Render
+	- Unity recorder
+	- Record frame by frame and save them as images 
+	
+
+- Japaneses animation requirement
+	- Cel Shader Requiremennt
+	
+Talk Pipeline
+Film Layout
+	- Set
+	- If you work on large project, we might split things into separate scenes
+	- AA studios tend to split into multiple scenes workflow
+	
+- HD render pipeline wizard fix issues from wizard
+Disable lighting to preview assets without shadows for easier viewing
+
+- Camera to view
+	: Directional Light -> GameObject -> Align with view
+
+Select Timeline gameobject, Timeline window shows up
+
+Create empty placeholder object under Character parent gameobject
+
+Drag character adam gameobject into Timeline
+Drag wasp and then add animation track
+
+Press record, and then grab adam and bring in forward
+Rotate him, and then go 7th second mark
+You can swap between frames and seconds
+Once in 7 second, I'm gonna push him forward
+
+Adam slowly approaches the wasp
+
+____
+Createn new camera track
+Create new cinemachine track for the camera and add it to track camera group
+
+Lens
+Focal Length
+Aperture (Blur Effect)
+
+Procedural Camera cinemachine
+
+Cinemachine create virtual camera
