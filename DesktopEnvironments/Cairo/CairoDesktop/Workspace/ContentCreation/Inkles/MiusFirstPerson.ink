@@ -36,7 +36,7 @@ But things are definitely not going in my favors
 
 
 Why do i keep falling... why do i have limits... why cant i just do it... and finish it... and keep moving forward.
-
+everytime i try to do something, i always, freeze, whenever i feel liable. feeling liable makes me weak, it freezes and stops my movement completely.
 
 
 -> END
