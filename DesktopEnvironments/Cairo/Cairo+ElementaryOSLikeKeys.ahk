@@ -33,3 +33,9 @@
  
 #Up::Send #{Tab}
 
+
+; Disable win key
+LWin::
+return
+
+
