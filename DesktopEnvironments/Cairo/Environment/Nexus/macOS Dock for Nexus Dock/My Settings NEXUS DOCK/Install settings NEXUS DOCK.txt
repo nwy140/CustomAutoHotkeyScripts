@@ -1,0 +1,10 @@
+
+1- Install San Francisco font
+
+2- Move theme folder to C:\Users\Public\Documents\Winstep\NeXuS\Backgrounds
+
+3- Move "indicator d" to C:\Users\Public\Documents\WinStep\NeXus\Indicators
+
+4- Move the "234 icons for Dock" folder to C:\
+
+5- In nexus dock menu click in "Advanced" > "Restore" and instal settings file

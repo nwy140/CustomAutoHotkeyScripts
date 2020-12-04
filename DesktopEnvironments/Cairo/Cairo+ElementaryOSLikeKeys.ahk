@@ -22,20 +22,14 @@
  
 ; swap window left wi.th ctrl window left
 
-<#<^Right::Send #{ Right } 
- 
-<#<^Left::Send #{ Left }
-
-#Right::Send #^{Right}
- 
-#Left::Send #^{Left}
 
  
-#Up::Send #{Tab}
+
 
 
 ; Disable win key
-LWin::
-return
 
-
+LWin & vk07::return
+LWin::return
+RWin & vk07::return
+RWin::return
