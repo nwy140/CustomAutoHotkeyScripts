@@ -29,7 +29,7 @@
 
 ; Disable win key
 
-LWin & vk07::return
-LWin::return
-RWin & vk07::return
-RWin::return
+; LWin & vk07::return
+; LWin::return
+; RWin & vk07::return
+; RWin::return
