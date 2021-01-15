@@ -8,6 +8,7 @@
   SendInput #^{Left}
   Return
 
+;These ahk snippets are meant for the special mouse with side buttons
 #XButton2:: ; switch to next desktop with Windows key + Left Alt key
 
   SendInput #^{Right}
