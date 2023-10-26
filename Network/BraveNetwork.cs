@@ -201,7 +201,7 @@ public class HelloWorld
     	string appendStr = t.Replace("com", a);;
     	res+=appendStr;
     	Console.WriteLine(appendStr);
-	}    
-    
+	}
+	Console.WriteLine("||google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png");
 	}
 }
