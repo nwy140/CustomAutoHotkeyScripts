@@ -5,8 +5,7 @@ public class HelloWorld
 {
 	public static void Main(string[] args)
 	{
-    	string t ="google.com##div#searchform\ngoogle.com##div#qslc\ngoogle.com##div#ulyTKe\ngoogle.com##div#gb-main\ngoogle.com##div.nL3eUgb\ngoogle.com##div.qlS7ne\ngoogle.com##div.logo
-		\n";
+    	string t ="google.com##div#searchform\ngoogle.com##div#qslc\ngoogle.com##div#ulyTKe\ngoogle.com##div#gb-main\ngoogle.com##div.nL3eUgb\ngoogle.com##div.qlS7ne\ngoogle.com##div.logo\n\n";
     	string res ="";
     	string[] arr = {   		 
 "com",
