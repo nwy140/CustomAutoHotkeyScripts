@@ -6,7 +6,7 @@ public class HelloWorld
 	public static void Main(string[] args)
 	{
     	string t ="google.com##.L3eUgb\ngoogle.com##div#searchform\ngoogle.com##div#gb-main\ngoogle.com##div#qslc\ngoogle.com##div#ulyTKe\ngoogle.com##div##kO001e\ngoogle.com##.logo\ngoogle.com##div#logo\ngoogle.com##.nL3eUgb\ngoogle.com##.qlS7ne\ngoogle.com##.JQyAhb\n\n";
-	t ="google.com##.Gwkg9c\ngoogle.com##div#gws-quantum-experimental_page_header__sbox\ngoogle.com##.LBH5L\ngoogle.com##.FtRlBe\n";
+	t ="google.com##.Gwkg9c\ngoogle.com##div#gws-quantum-experimental_page_header__sbox\ngoogle.com##.LBH5L\ngoogle.com##.wQnou\n";
     	string res ="";
     	string[] arr = {   		 
 "com",
