@@ -51,35 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>if application "VLC" is running then
-	tell application "VLC"
-		step forward
-		step forward
-		step forward
-	end tell
-end if
-property step : 30
-if application "QuickTime Player" is running then
-	tell application "QuickTime Player"
-		set playerPosition to (current time of front document) + step
-		set movieDuration to duration of front document
-		if (front document is playing) then
-			set isPlaying to true
-		end if
-		if (playerPosition ≥ movieDuration) then
-			if front document is playing then
-				stop front document
-			end if
-			set playerPosition to movieDuration
-			set current time of front document to playerPosition
-		else
-			set current time of front document to playerPosition
-			if (isPlaying) then
-				play front document
-			end if
-		end if
-	end tell
-end if</string>
+					<string>if application "VLC" is running then	tell application "VLC"		step forward	end tellend ifproperty step : 15if application "QuickTime Player" is running then	tell application "QuickTime Player"		set playerPosition to (current time of front document) + step		set movieDuration to duration of front document		if (front document is playing) then			set isPlaying to true		end if		if (playerPosition ≥ movieDuration) then			if front document is playing then				stop front document			end if			set playerPosition to movieDuration			set current time of front document to playerPosition		else			set current time of front document to playerPosition			if (isPlaying) then				play front document			end if		end if	end tellend if</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -133,7 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>309.000000:315.000000</string>
+				<string>301.500000:315.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
