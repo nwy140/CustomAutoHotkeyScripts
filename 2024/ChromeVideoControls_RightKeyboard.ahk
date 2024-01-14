@@ -1,4 +1,4 @@
-﻿;https://forum.obsidian.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-obsidian/55435
+﻿;Source: https://forum.obsidian.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-obsidian/55435
 
 ; In case you have another browser, replace where it says "chrome" 
 ; by the name of your browser with: "msedge"; "opera", "vivaldi", "firefox" or "brave".
