@@ -19,9 +19,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; YOUTUBE (Microsoft-Edge)-OBSIDIAN FOCUS CHANGE: --------------------------------------
 
-^+3::
-SendEvent, {Media_Play_Pause}
-Return
 
 ;^+3::YoutubePause("ahk_exe msedge.exe")
 
@@ -81,6 +78,14 @@ YoutubeForwind(title)
 
 }
 
+return
+
+
+^+3::
+	WinGet, ActiveID, ID, A
+	WinActivate, ahk_exe msedge.exe ; use the process name of your browser
+	Send, {space}
+	WinActivate, ahk_id %ActiveID%
 return
 
 Media_Next:: ; change to desired hotkey
