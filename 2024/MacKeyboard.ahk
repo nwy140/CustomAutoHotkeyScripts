@@ -1,4 +1,4 @@
-// Forked/Copied from https://github.com/stroebjo/autohotkey-windows-mac-keyboard/tree/master
+; Forked/Copied from https://github.com/stroebjo/autohotkey-windows-mac-keyboard/tree/master
 
 
 ;-----------------------------------------
@@ -63,6 +63,22 @@ F16::Run http://twitter.com
 F17::Run http://tumblr.com
 F18::Run http://www.reddit.com
 F19::Run https://facebook.com
+
+
+; --------------------------------------------------------------
+; Custom shortcuts
+; --------------------------------------------------------------
+
+; Zoom
+#=::Send, ^=
+
+; Selecting
+#-::Send, ^-
+
+; Source: https://www.autohotkey.com/board/topic/28659-change-ctrl-scroll-wheel-functionality-to-alt-scroll-whe/
+; Map Alt+Wheel to do Ctrl+Wheel
+#WheelUp::^WheelUp
+#WheelDown::^WheelDown
 
 ; --------------------------------------------------------------
 ; OS X system shortcuts
