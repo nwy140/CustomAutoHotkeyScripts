@@ -75,6 +75,9 @@ F19::Run https://facebook.com
 ; Selecting
 #-::Send, ^-
 
+; Redo Special
++#z::Send +^z
+
 ; Source: https://www.autohotkey.com/board/topic/28659-change-ctrl-scroll-wheel-functionality-to-alt-scroll-whe/
 ; Map Alt+Wheel to do Ctrl+Wheel
 #WheelUp::^WheelUp
