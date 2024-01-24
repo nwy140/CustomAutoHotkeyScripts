@@ -82,10 +82,7 @@ return
 
 
 ^+3::
-	WinGet, ActiveID, ID, A
-	WinActivate, ahk_exe msedge.exe ; use the process name of your browser
-	Send, {space}
-	WinActivate, ahk_id %ActiveID%
+Send {Media_Play_Pause}
 return
 
 Media_Next::YoutubeForwind("ahk_exe msedge.exe")
