@@ -3,7 +3,7 @@
 ; https://www.autohotkey.com/docs/v1/Hotkeys.htm
 
 
-;LWin::RCtrl
+LWin::RCtrl
 
 #HotIf (A_PriorHotkey ="*LWin"  and A_Priorkey = "LWin") 
 
