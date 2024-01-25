@@ -5,7 +5,7 @@
 
 ;CONTROLS:
 ;CTRL+1 = Rewind
-;CTRL+3 = Pause/Play
+;CTRL+3 = Pause/Play 
 ;CTRL+2 = Forwind
 
 
