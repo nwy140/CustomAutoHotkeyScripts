@@ -43,3 +43,4 @@ return
 >^+`::>^+Esc
 
 
+; Remap Windows + Tab to Alt + Tab. Done in Powertoys
