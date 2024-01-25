@@ -4,9 +4,9 @@
 ; by the name of your browser with: "msedge"; "opera", "vivaldi", "firefox" or "brave".
 
 ;CONTROLS:
-;CTRL+J = Rewind
-;CTRL+K = Pause/Play
-;CTRL+L = Forwind
+;CTRL+1 = Rewind
+;CTRL+3 = Pause/Play
+;CTRL+2 = Forwind
 
 
 #SingleInstance Force
