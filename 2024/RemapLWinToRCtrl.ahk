@@ -5,9 +5,9 @@
 
 LWin::RCtrl
 
-#HotIf (A_PriorHotkey ="LWin" || A_PriorHotkey ="*LWin"  || A_Priorkey ="LWin" || A_Priorkey ="*LWin")
+#HotIf (A_PriorHotkey ="*LWin"  and A_Priorkey = "LWin") 
 
-    ~LWin Up::{
+    $LWin Up::{
         ; Send "{Blind}{vkE8}"
         CoordMode "Mouse", "Screen"
         MouseGetPos &orig_x, &orig_y
