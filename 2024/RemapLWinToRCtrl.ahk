@@ -13,6 +13,7 @@ LWin::RCtrl
         MouseGetPos &orig_x, &orig_y
         Click 0, A_ScreenHeight
         MouseMove orig_x, orig_y
+	Send "{Blind}{RCtrl Up}"
     }
 
 #HotIf
