@@ -9,6 +9,7 @@ LWin::RCtrl
 
     $LWin Up::{
         ; Send "{Blind}{vkE8}"
+	SetDefaultMouseSpeed  0
         CoordMode "Mouse", "Screen"
         MouseGetPos &orig_x, &orig_y
         Click 0, A_ScreenHeight
