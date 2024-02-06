@@ -13,10 +13,10 @@ LWin::RCtrl
         CoordMode "Mouse", "Screen"
         MouseGetPos &orig_x, &orig_y
 
-if (orig_x<=-10)             ; Monitor Left
-	Click -1887, 1057
-else                         ; Other Monitors
-        Click 0, A_ScreenHeight
+	if (orig_x<=-10)             ; Monitor Left
+		Click -1920, 1079
+	else                         ; Other Monitors
+        	Click 0, A_ScreenHeight
 
         MouseMove orig_x, orig_y
 	Send "{Blind}{RCtrl Up}"
