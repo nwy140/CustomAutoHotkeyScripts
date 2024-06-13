@@ -95,11 +95,8 @@ YoutubeSpace(title)
 return
 
 
-^+3::
-Send {Media_Play_Pause}
-return
+^+3::YoutubeSpace("ahk_exe mpc-be64.exe")
 
-Home::F23
 F23::YoutubeForwind("ahk_exe mpc-be64.exe")
 
 Help::YoutubeRewind("ahk_exe mpc-be64.exe")

@@ -77,14 +77,34 @@ YoutubeForwind(title)
 	
 
 }
+YoutubeSpace(title)
+{
+	IfWinExist, %title%
+		WinActivate
+		sleep 15
+		Send {Space}
+		sleep 15
+		{
+			IfWinExist, ahk_exe Obsidian.exe
+			WinActivate
+		}
+	
+
+}
 
 return
 
 
 ^+3::
 Send {Media_Play_Pause}
-return
 
 Media_Next::YoutubeForwind("ahk_exe msedge.exe")
 
 Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
+
+
+F23::YoutubeForwind("ahk_exe msedge.exe")
+
+Help::YoutubeRewind("ahk_exe msedge.exe")
+
+ScrollLock::YoutubeSpace("ahk_exe msedge.exe")
