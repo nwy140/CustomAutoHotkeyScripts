@@ -107,4 +107,4 @@ F23::YoutubeForwind("ahk_exe msedge.exe")
 
 Help::YoutubeRewind("ahk_exe msedge.exe")
 
-ScrollLock::YoutubeSpace("ahk_exe msedge.exe")
+ScrollLock::Media_Play_Pause
