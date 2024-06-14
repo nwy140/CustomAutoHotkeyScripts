@@ -17,31 +17,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #InstallKeybdHook
 
-; YOUTUBE (Microsoft-Edge)-OBSIDIAN FOCUS CHANGE: --------------------------------------
-
-
-;^+3::YoutubePause("ahk_exe msedge.exe")
-
-;YoutubePause(title)
-;{
-;	IfWinExist, %title%
-;		WinActivate
-;		sleep 15
-;		Send k
-;		sleep 15
-;		{
-;			IfWinExist, ahk_exe blender.exe
-;			WinActivate
-;		}
-	
-
-;}
-
-;return
-
-
-^+1::YoutubeRewind("ahk_exe msedge.exe")
-
 YoutubeRewind(title)
 {
 	IfWinExist, %title%
@@ -59,11 +34,6 @@ YoutubeRewind(title)
 		}
 }
 
-return
-
-
-
-^+2::YoutubeForwind("ahk_exe msedge.exe")
 
 YoutubeForwind(title)
 {
@@ -101,19 +71,20 @@ YoutubeSpace(title)
 
 }
 
-return
 
 
-^+3::
-Send {Media_Play_Pause}
+^+1::YoutubeRewind("ahk_exe msedge.exe")
+^+2::YoutubeForwind("ahk_exe msedge.exe")
+^+3::Media_Play_Pause
 
 Media_Next::YoutubeForwind("ahk_exe msedge.exe")
 
 Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
 
-
-F23::YoutubeForwind("ahk_exe msedge.exe")
-
-Help::YoutubeRewind("ahk_exe msedge.exe")
-
 ScrollLock::Media_Play_Pause
+
+
+;F23::YoutubeForwind("ahk_exe msedge.exe")
+
+;Help::YoutubeRewind("ahk_exe msedge.exe")
+
