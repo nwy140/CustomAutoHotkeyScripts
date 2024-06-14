@@ -81,18 +81,4 @@ Media_Next::YoutubeForwind("ahk_exe msedge.exe")
 
 Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
 
-ScrollLock::Media_Play_Pause
-
-
-;F23::YoutubeForwind("ahk_exe msedge.exe")
-
-;Help::YoutubeRewind("ahk_exe msedge.exe")
-
-F23 & z::YoutubeRewind("ahk_exe msedge.exe")
-
-F23 & x::YoutubeForwind("ahk_exe msedge.exe")
-
-F23 & c::Media_Play_Pause
-
-F23::YoutubeForwind("ahk_exe msedge.exe")
 
