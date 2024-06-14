@@ -1,8 +1,15 @@
-
+;https://www.autohotkey.com/boards/viewtopic.php?t=25199
 
 Loop
 {
-    ; Kill the Firefox process if it is running
-    Process, Close, firefox.exe
+Process, Exist, firefox.exe
+
+;MsgBox,%errorlevel%
+If(errorlevel) ; If found, do nothing.
+{
+Process, Close, firefox.exe
 }
-return
+
+
+
+}
