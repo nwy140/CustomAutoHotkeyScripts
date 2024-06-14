@@ -1,4 +1,4 @@
-﻿;Source: https://forum.blender.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-blender/55435
+﻿;Source: https://forum.obsidian.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-blender/55435
 
 ; In case you have another browser, replace where it says "msedge" 
 ; by the name of your browser with: "msedge"; "opera", "vivaldi", "firefox" or "brave".
@@ -17,7 +17,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #InstallKeybdHook
 
-; YOUTUBE (Microsoft-Edge)-blender FOCUS CHANGE: --------------------------------------
+; YOUTUBE (Microsoft-Edge)-OBSIDIAN FOCUS CHANGE: --------------------------------------
 
 
 ;^+3::YoutubePause("ahk_exe msedge.exe")
