@@ -1,4 +1,4 @@
-﻿;Source: https://forum.obsidian.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-obsidian/55435
+﻿;Source: https://forum.obsidian.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-blender/55435
 
 ; In case you have another browser, replace where it says "mpc-be64" 
 ; by the name of your browser with: "mpc-be64"; "opera", "vivaldi", "firefox" or "brave".
@@ -17,89 +17,74 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #InstallKeybdHook
 
-; YOUTUBE (Microsoft-Edge)-OBSIDIAN FOCUS CHANGE: --------------------------------------
-
-
-;^+3::YoutubePause("ahk_exe mpc-be64.exe")
-
-;YoutubePause(title)
-;{
-;	IfWinExist, %title%
-;		WinActivate
-;		sleep 15
-;		Send k
-;		sleep 15
-;		{
-;			IfWinExist, ahk_exe Obsidian.exe
-;			WinActivate
-;		}
-	
-
-;}
-
-;return
-
-
-^+1::YoutubeRewind("ahk_exe mpc-be64.exe")
-
 YoutubeRewind(title)
 {
 	IfWinExist, %title%
+				
+		; https://superuser.com/questions/529437/how-can-i-return-focus-to-the-previous-window
+		WinGet, PrevActiveProcess, ProcessName, A
+
 		WinActivate
 		sleep 15
 		Send {Left}
 		sleep 15
 		{
-			IfWinExist, ahk_exe Obsidian.exe
+			IfWinExist, ahk_exe %PrevActiveProcess%
 			WinActivate
 		}
-	
-
 }
 
-return
-
-
-
-^+2::YoutubeForwind("ahk_exe mpc-be64.exe")
 
 YoutubeForwind(title)
 {
 	IfWinExist, %title%
+				
+		; https://superuser.com/questions/529437/how-can-i-return-focus-to-the-previous-window
+		WinGet, PrevActiveProcess, ProcessName, A
+
 		WinActivate
 		sleep 15
 		Send {Right}
 		sleep 15
 		{
-			IfWinExist, ahk_exe Obsidian.exe
+			IfWinExist, ahk_exe %PrevActiveProcess%
 			WinActivate
 		}
-	
 
 }
+
 YoutubeSpace(title)
 {
 	IfWinExist, %title%
+				
+		; https://superuser.com/questions/529437/how-can-i-return-focus-to-the-previous-window
+		WinGet, PrevActiveProcess, ProcessName, A
+
 		WinActivate
 		sleep 15
 		Send {Space}
 		sleep 15
 		{
-			IfWinExist, ahk_exe Obsidian.exe
+			IfWinExist, ahk_exe %PrevActiveProcess%
 			WinActivate
 		}
-	
 
 }
 
-return
 
 
-^+3::YoutubeSpace("ahk_exe mpc-be64.exe")
+^+1::YoutubeRewind("ahk_exe mpc-be64.exe")
+^+2::YoutubeForwind("ahk_exe mpc-be64.exe")
+^+3::Media_Play_Pause
 
-F23::YoutubeForwind("ahk_exe mpc-be64.exe")
+Media_Next::YoutubeForwind("ahk_exe mpc-be64.exe")
 
-Help::YoutubeRewind("ahk_exe mpc-be64.exe")
+Media_Prev::YoutubeRewind("ahk_exe mpc-be64.exe")
 
-ScrollLock::YoutubeSpace("ahk_exe mpc-be64.exe")
+ScrollLock::Media_Play_Pause
+
+
+;F23::YoutubeForwind("ahk_exe mpc-be64.exe")
+
+;Help::YoutubeRewind("ahk_exe mpc-be64.exe")
 
