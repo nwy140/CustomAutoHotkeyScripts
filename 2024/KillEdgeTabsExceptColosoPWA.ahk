@@ -18,7 +18,7 @@ Loop, %WindowList%
 
 		WinGetTitle, Title, % "ahk_id " . WindowList%A_Index% 
 
-		If (Title) && (Title != "Program Manager")
+		If (Title) ; && (Title != "Program Manager")
 		
 		;IfInString, Title, %Var%
 		IfNotInString, Title, %Var%
