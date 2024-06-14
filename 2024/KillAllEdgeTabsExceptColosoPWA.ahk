@@ -11,7 +11,7 @@ SetTitleMatchMode, 2
 
 
 Var = Coloso 
-
+Loop{
 WinGet, WindowList, List, ahk_exe msedge.exe
 Loop, %WindowList%
 	{ 
@@ -27,4 +27,4 @@ Loop, %WindowList%
 
 	
 	}
-			
+}		
