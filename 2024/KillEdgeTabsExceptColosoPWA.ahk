@@ -1,4 +1,3 @@
-
 ;https://www.autohotkey.com/board/topic/22934-close-all-windows-with-this-string-in-title/
 
 ;https://www.autohotkey.com/boards/viewtopic.php?t=107735
@@ -10,7 +9,9 @@ SetTitleMatchMode, 2
 ;WinGet, WindowList, List 
 
 
-Var = Coloso 
+allow1 = Coloso
+allow2 = A Soft Murmur
+ 
 Loop{
 WinGet, WindowList, List, ahk_exe msedge.exe
 Loop, %WindowList%
@@ -20,11 +21,17 @@ Loop, %WindowList%
 
 		If (Title) ; && (Title != "Program Manager")
 		
-		;IfInString, Title, %Var%
-		IfNotInString, Title, %Var%
+		IfInString, Title, %allow1%
+			break
+		IfInString, Title, %allow2%
+			break
 
-			WinClose, % "ahk_id " . WindowList%A_Index% 
+		;IfNotInString, Title, %Var%
 
-	
+		;WinGetTitle, Title, A
+		;MsgBox, The active window is "%Title%".
+
+		WinClose, % "ahk_id " . WindowList%A_Index% 
 	}
-}		
+}
+
