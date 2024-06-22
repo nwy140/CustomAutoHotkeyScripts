@@ -11,7 +11,9 @@ SetTitleMatchMode, 2
 
 allow1 = Coloso
 allow2 = A Soft Murmur
- 
+allow3 = Moe
+allow4 = Duolingo
+
 Loop{
 WinGet, WindowList, List, ahk_exe msedge.exe
 Loop, %WindowList%
@@ -24,6 +26,11 @@ Loop, %WindowList%
 		IfInString, Title, %allow1%
 			break
 		IfInString, Title, %allow2%
+			break
+
+		IfInString, Title, %allow3%
+			break
+		IfInString, Title, %allow4%
 			break
 
 		;IfNotInString, Title, %Var%
