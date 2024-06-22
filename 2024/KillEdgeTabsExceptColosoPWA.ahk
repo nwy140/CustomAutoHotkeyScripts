@@ -13,6 +13,8 @@ allow1 = Coloso
 allow2 = A Soft Murmur
 allow3 = Moe
 allow4 = Duolingo
+allow5 = Kiosk
+allow6 = StudyTogether
 
 Loop{
 WinGet, WindowList, List, ahk_exe msedge.exe
@@ -31,6 +33,10 @@ Loop, %WindowList%
 		IfInString, Title, %allow3%
 			break
 		IfInString, Title, %allow4%
+			break
+		IfInString, Title, %allow5%
+			break
+		IfInString, Title, %allow6%
 			break
 
 		;IfNotInString, Title, %Var%
