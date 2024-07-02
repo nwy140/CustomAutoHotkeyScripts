@@ -15,6 +15,7 @@ allow3 = Moe
 allow4 = Duolingo
 allow5 = Kiosk
 allow6 = StudyTogether
+allow7 = Whatsapp
 
 Loop{
 WinGet, WindowList, List, ahk_exe msedge.exe
@@ -38,7 +39,8 @@ Loop, %WindowList%
 			break
 		IfInString, Title, %allow6%
 			break
-
+		IfInString, Title, %allow7%
+			break
 		;IfNotInString, Title, %Var%
 
 		;WinGetTitle, Title, A
