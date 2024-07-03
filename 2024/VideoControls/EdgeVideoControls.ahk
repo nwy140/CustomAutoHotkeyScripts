@@ -86,20 +86,3 @@ Media_Next::YoutubeForwind("ahk_exe msedge.exe")
 
 Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
 
-
-#Persistent  ; Prevent the script from exiting automatically.
-OnExit("ExitFunc")
-
-ExitFunc(ExitReason, ExitCode)
-{
-    if ExitReason not in Logoff,Shutdown  ; Avoid spaces around the comma.
-    {
-        ;MsgBox, 4, , Are you sure you want to exit?
-        ;IfMsgBox, No
-        ;    return 1  ; Callbacks must return non-zero to avoid exit.
-	run, MouseBackForwardShortcutRebind.exe
-
-	
-    }
-    ; Do not call ExitApp -- that would prevent other callbacks from being called.
-}
