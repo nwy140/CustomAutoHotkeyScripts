@@ -74,9 +74,7 @@ YoutubeSpace(title)
 }
 
 
-^XButton1::YoutubeRewind("ahk_exe msedge.exe")
-^XButton2::YoutubeForwind("ahk_exe msedge.exe")
-XButton1 & XButton2::Media_Play_Pause
+
 
 ^+1::YoutubeRewind("ahk_exe msedge.exe")
 ^+2::YoutubeForwind("ahk_exe msedge.exe")
