@@ -17,7 +17,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #InstallKeybdHook
 
-Process, Close, MouseBackForwardShortcutRebind.exe
 
 YoutubeRewind(title)
 {

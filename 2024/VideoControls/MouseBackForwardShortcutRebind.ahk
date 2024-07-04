@@ -2,10 +2,11 @@
 
 #SingleInstance Force
 
-Process, Close, EdgeVideoControls.exe
 
 F23 & XButton1::Media_Prev
 F23 & XButton2::Media_Next
-XButton1 & XButton2::Media_Play_Pause
 
+F23 & Z::Media_Play_Pause
 
+F23 & X::Media_Prev
+F23 & C::Media_Next
