@@ -4,6 +4,8 @@
 
 Process, Close, EdgeVideoControls.exe
 
-^XButton1::Media_Prev
-^XButton2::Media_Next
+F23 & XButton1::Media_Prev
+F23 & XButton2::Media_Next
 XButton1 & XButton2::Media_Play_Pause
+
+
