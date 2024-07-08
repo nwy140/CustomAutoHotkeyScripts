@@ -2,9 +2,9 @@
 
 #Requires AutoHotkey v2.0
 
-~LShift Up::{
-    if KeyWait("LShift", "D T0.3") {
-        Send "{alt Down}"
+~alt Up::{
+    if KeyWait("alt", "D T0.3") {
+        Send "{shift}"
     }
-    KeyWait "LShift"
+    KeyWait "alt"
 }
