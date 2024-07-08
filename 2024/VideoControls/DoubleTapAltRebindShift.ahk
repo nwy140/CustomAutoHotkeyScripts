@@ -1,0 +1,1 @@
+https://www.reddit.com/r/AutoHotkey/comments/18cg39s/double_pressing_a_key_performs_another_key/?rdt=42673
