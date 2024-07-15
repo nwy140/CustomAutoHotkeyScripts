@@ -1,11 +1,22 @@
+
+https://www.reddit.com/r/SteamDeck/comments/zlgmz6/yay_package_removed_or_any_other_good_guide_on_aur/
+sudo steamos-readonly disable && sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman -Syu base-devel holo/linux-headers linux-neptune-headers holo/linux-lts-headers git glibc gcc gcc-libs fakeroot linux-api-headers libarchive
+
+sudo packman -S git
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+
+Also, use debtap to install debian packages on arch linux
+https://www.reddit.com/r/steamdeck_linux/comments/z0kr4i/how_to_install_debtap/
+https://github.com/helixarch/debtap/issues/85
+
 https://github.com/qt/qtbase/blob/f89c4c4f8fd5afbb6a5480fe2fc13bb6dcaace47/src/gui/kernel/qkeysequence.cpp#L393-L678
 
 fix pacman pkg signature issue via  sudo pacman-key --populate holo
 
 https://www.reddit.com/r/SteamOS/comments/x6pcfd/invalid_or_corrupted_pgp_signature/
 
-Also, use debtap to install debian packages on arch linux
-https://www.reddit.com/r/steamdeck_linux/comments/z0kr4i/how_to_install_debtap/
 
 keyname[] = {
     //: This and all following "incomprehensible" strings in QShortcut context
