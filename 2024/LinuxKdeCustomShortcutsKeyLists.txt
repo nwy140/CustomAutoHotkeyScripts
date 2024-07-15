@@ -5,6 +5,7 @@ fix pacman pkg signature issue via  sudo pacman-key --populate holo
 https://www.reddit.com/r/SteamOS/comments/x6pcfd/invalid_or_corrupted_pgp_signature/
 
 Also, use debtap to install debian packages on arch linux
+https://www.reddit.com/r/steamdeck_linux/comments/z0kr4i/how_to_install_debtap/
 
 keyname[] = {
     //: This and all following "incomprehensible" strings in QShortcut context
