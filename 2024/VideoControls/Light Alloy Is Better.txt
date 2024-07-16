@@ -1,1 +1,0 @@
-No Point Using MPCBE and making my own AHK Script When Light Alloy Video Player Already supporst global hotkeys + Live Timebar Video Preview in Video Settings
