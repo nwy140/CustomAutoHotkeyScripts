@@ -1,5 +1,5 @@
 Browser_Home::!LButton
-F13::!LButton
+Launch_Media::!LButton
 
 ;!Browser_Home::!LButton
 
