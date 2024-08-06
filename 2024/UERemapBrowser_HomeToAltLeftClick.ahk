@@ -1,4 +1,3 @@
-
 AltLMB_BrowserHome()
 {
     send {blind}{Alt down}
@@ -19,19 +18,11 @@ AltLMB_Launch_Media()
     return
 }
 
-
+; Note: Keywait is needed for Unreal Engine
 
 Browser_Home::AltLMB_BrowserHome()
-
 Launch_Media::AltLMB_Launch_Media()
 
-#IF GetKeyState("Launch_Media","Numpad3") Or GetKeyState("Launch_Media","Numpad1")
-; https://www.autohotkey.com/boards/viewtopic.php?style=2&t=98547 
-; M908_4-3_4-6_ForwardBack
-~Numpad1::SendInput, {LButton Up}{XButton1}
-~Numpad3::SendInput, {LButton Up}{XButton2}
-
-#IF
 
 
 ;!Browser_Home::!LButton
