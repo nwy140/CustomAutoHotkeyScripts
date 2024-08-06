@@ -1,12 +1,4 @@
-Browser_Home::
-send {blind}{Alt down}
-send {blind}{LButton down}
-keywait  Browser_Home
-send {blind}{LButton up}
-send {blind}{Alt up}
-return
-
-	
+Browser_Home::!LButton
 
 
 ;!Browser_Home::!LButton
