@@ -1,11 +1,3 @@
-Browser_Home::!LButton
-Launch_Media::!LButton
-
-
-; M908_4-3_4-6_ForwardBack
-~Launch_Media & Numpad3::XButton2
-~Launch_Media & Numpad1::XButton1
-
 
 ;!Browser_Home::!LButton
 
