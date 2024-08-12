@@ -10,6 +10,7 @@ AltLMB_BrowserHome()
 
 AltLMB_Launch_Media()
 {
+   
     send {blind}{Alt down}
     send {blind}{LButton down}
     keywait  Launch_Media
@@ -21,7 +22,12 @@ AltLMB_Launch_Media()
 ; Note: Keywait is needed for Unreal Engine
 
 Browser_Home::AltLMB_BrowserHome()
+
+; https://www.reddit.com/r/AutoHotkey/comments/169lx5r/comment/jz2zxrt/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+#If !WinActive("ahk_exe blender.exe")
 Launch_Media::AltLMB_Launch_Media()
+#If
+Launch_Media::!Pause
 
 
 
