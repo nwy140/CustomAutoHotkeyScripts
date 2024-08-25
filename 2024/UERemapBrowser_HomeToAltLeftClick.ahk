@@ -17,6 +17,13 @@ AltLMB_Launch_Media()
         send {blind}{PAUSE up}
         send {blind}{Alt up}
     }
+    else if WinActive("ahk_exe 3dsmax.exe"){
+        send {blind}{Alt down}
+        send {blind}{mButton down}
+        keywait  Launch_Media
+        send {blind}{mButton up}
+        send {blind}{Alt up}
+    }
     else{
         send {blind}{Alt down}
         send {blind}{LButton down}
