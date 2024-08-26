@@ -1,10 +1,26 @@
 AltLMB_BrowserHome()
 {
-    send {blind}{Alt down}
-    send {blind}{LButton down}
-    keywait  Browser_Home
-    send {blind}{LButton up}
-    send {blind}{Alt up}
+    If WinActive("ahk_exe blender.exe"){
+        send {blind}{Alt down}
+        send {blind}{PAUSE down}
+        keywait  Browser_Home
+        send {blind}{PAUSE up}
+        send {blind}{Alt up}
+    }
+    else if WinActive("ahk_exe 3dsmax.exe"){
+        send {blind}{Alt down}
+        send {blind}{mButton down}
+        keywait  Browser_Home
+        send {blind}{mButton up}
+        send {blind}{Alt up}
+    }
+    else{
+        send {blind}{Alt down}
+        send {blind}{LButton down}
+        keywait  Browser_Home
+        send {blind}{LButton up}
+        send {blind}{Alt up}
+    }
     return
 }
 
