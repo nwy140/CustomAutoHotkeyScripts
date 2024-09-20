@@ -2,6 +2,4 @@
 
 
 $wshell = New-Object -ComObject wscript.shell
-# $wshell.Sendkeys("%{ }")
-
-$wshell.Sendkeys("%{END}")
+$wshell.Sendkeys("%{ }")
