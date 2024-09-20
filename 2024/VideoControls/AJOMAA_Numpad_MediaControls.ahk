@@ -3,11 +3,11 @@
 #SingleInstance Force
 
 
-~Numpad0 & Left::Media_Prev
-~Numpad0 & Right::Media_Next
+~PgUp & Left::Media_Prev
+~PgUp & Right::Media_Next
 
-~Numpad0 & Down::Media_Play_Pause
+~PgUp & Down::Media_Play_Pause
 
-~Numpad0 & Up::#PrintScreen
+~PgUp & Up::#PrintScreen
 
 ;PgDn PgUp Numpad0
