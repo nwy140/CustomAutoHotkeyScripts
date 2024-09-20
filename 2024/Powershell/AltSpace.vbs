@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "AltSpace.bat", 0, True

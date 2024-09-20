@@ -1,3 +1,2 @@
-PowerShell.exe -ExecutionPolicy Bypass -File "AltSpace.ps1"
-
+powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File "AltSpace.ps1"
 exit
