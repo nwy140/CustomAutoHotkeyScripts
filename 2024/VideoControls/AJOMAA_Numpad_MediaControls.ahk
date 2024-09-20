@@ -8,6 +8,6 @@
 
 ~Numpad0 & Down::Media_Play_Pause
 
-~Numpad0 & Up::Enter
+~Numpad0 & Up::#PrintScreen
 
 ;PgDn PgUp Numpad0
