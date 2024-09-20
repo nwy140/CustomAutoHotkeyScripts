@@ -6,11 +6,18 @@
 HOME & Left::Media_Prev
 HOME & Right::Media_Next
 HOME & Down::Media_Play_Pause
-HOME & Up::#PrintScreen
+HOME & Up::!PrintScreen
+
+
+;PgDn PgUp Numpad0 HOME
+
 
 ;~HOME & Left::Media_Prev
 ;~HOME & Right::Media_Next
 ;~HOME & Down::Media_Play_Pause
 ;~HOME & Up::#PrintScreen
 
-;PgDn PgUp Numpad0 HOME
+
+
+
+
