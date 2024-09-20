@@ -1,3 +1,3 @@
-PowerShell.exe -noexit -ExecutionPolicy Bypass -File "AltSpace.ps1"
+PowerShell.exe -ExecutionPolicy Bypass -File "AltSpace.ps1"
 
 exit
