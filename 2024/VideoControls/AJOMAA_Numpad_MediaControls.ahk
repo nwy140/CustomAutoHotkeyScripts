@@ -3,12 +3,12 @@
 #SingleInstance Force
 
 
-~PgUp & Left::Media_Prev
-~PgUp & Right::Media_Next
+~Numpad0 & Left::Media_Prev
+~Numpad0 & Right::Media_Next
 
-~PgUp & Down::Media_Play_Pause
+~Numpad0 & Down::Media_Play_Pause
 
-~PgUp & Up::Enter
+~Numpad0 & Up::Enter
+~NumpadDot & NumpadEnter::ALTTAB
 
-
-;PgDn
+;PgDn PgUp Numpad0
