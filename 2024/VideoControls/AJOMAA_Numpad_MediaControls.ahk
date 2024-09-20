@@ -6,6 +6,7 @@
 HOME & Left::Media_Prev
 HOME & Right::Media_Next
 HOME & Down::Media_Play_Pause
+HOME & Up::#PrintScreen
 
 ;~HOME & Left::Media_Prev
 ;~HOME & Right::Media_Next
