@@ -1,0 +1,1 @@
+start msedge --app=https://www.youtube.com/@adversionzero
