@@ -9,6 +9,5 @@
 ~Numpad0 & Down::Media_Play_Pause
 
 ~Numpad0 & Up::Enter
-~NumpadDot & NumpadEnter::ALTTAB
 
 ;PgDn PgUp Numpad0
