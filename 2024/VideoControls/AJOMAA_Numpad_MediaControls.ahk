@@ -3,11 +3,13 @@
 #SingleInstance Force
 
 
-~PgUp & Left::Media_Prev
-~PgUp & Right::Media_Next
+HOME & Left::Media_Prev
+HOME & Right::Media_Next
+HOME & Down::Media_Play_Pause
 
-~PgUp & Down::Media_Play_Pause
+;~HOME & Left::Media_Prev
+;~HOME & Right::Media_Next
+;~HOME & Down::Media_Play_Pause
+;~HOME & Up::#PrintScreen
 
-~PgUp & Up::#PrintScreen
-
-;PgDn PgUp Numpad0
+;PgDn PgUp Numpad0 HOME
