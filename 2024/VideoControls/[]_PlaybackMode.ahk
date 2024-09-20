@@ -1,5 +1,5 @@
 ﻿~[ & ]::SwitchProcess()
-#NumpadDiv::SwitchProcess()
+#Backspace::SwitchProcess()
 
 SwitchProcess(){
     Process, Exist, MPV_VideoControls.exe
