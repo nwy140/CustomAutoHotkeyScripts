@@ -1,7 +1,7 @@
 ﻿~[ & ]::SwitchProcess()
 #Backspace::SwitchProcess()
-#1::TrelloProcess()
-#2::SwitchProcess()
+#Numpad1::TrelloProcess()
+#Numpad2::SwitchProcess()
 
 
 SwitchProcess(){
