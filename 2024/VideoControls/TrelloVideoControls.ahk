@@ -1,7 +1,7 @@
 ﻿;Source: https://forum.obsidian.md/t/autohotkey-script-for-controlling-youtube-media-without-losing-focus-on-blender/55435
 
-; In case you have another browser, replace where it says "msedge" 
-; by the name of your browser with: "msedge"; "opera", "vivaldi", "firefox" or "brave".
+; In case you have another browser, replace where it says "trello" 
+; by the name of your browser with: "trello"; "opera", "vivaldi", "firefox" or "brave".
 
 ;CONTROLS:
 ;CTRL+1 = Rewind
@@ -75,14 +75,14 @@ YoutubeSpace(title)
 
 
 
-^+1::YoutubeRewind("ahk_exe msedge.exe")
-^+2::YoutubeForwind("ahk_exe msedge.exe")
+^+1::YoutubeRewind("ahk_exe trello.exe")
+^+2::YoutubeForwind("ahk_exe trello.exe")
 ;^+3::Media_Play_Pause
-^+3::YoutubeSpace("ahk_exe msedge.exe")
+^+3::YoutubeSpace("ahk_exe trello.exe")
 
-Media_Play_Pause::YoutubeSpace("ahk_exe msedge.exe")
+Media_Play_Pause::YoutubeSpace("ahk_exe trello.exe")
 
-Media_Next::YoutubeForwind("ahk_exe msedge.exe")
+Media_Next::YoutubeForwind("ahk_exe trello.exe")
 
-Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
+Media_Prev::YoutubeRewind("ahk_exe trello.exe")
 
