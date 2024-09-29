@@ -6,7 +6,6 @@
 
 SwitchProcess(){
     Process, Exist, MPV_VideoControls.exe
-    Process, Close, TrelloVideoControls.exe
 
     ;MsgBox,%errorlevel%
     If(errorlevel) ; If found, do nothing.
