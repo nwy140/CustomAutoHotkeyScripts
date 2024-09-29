@@ -1,12 +1,12 @@
-#Requires AutoHotkey v1.1.33+
+
 
 #SingleInstance Force
 
 
-F23 & A::Media_Prev
-F23 & D::Media_Next
++F23 & A::Media_Prev
++F23 & D::Media_Next
 
-F23 & W::Media_Play_Pause
++F23 & W::Media_Play_Pause
 
 F23 & Tab::XButton1
 F23 & CapsLock::Enter
