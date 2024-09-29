@@ -10,3 +10,4 @@ F23 & D::Right
 F23 & S::Down
 F23 & W::Up
 
+F23 & E::Enter
