@@ -1,9 +1,5 @@
 #SingleInstance Force
 
-
-#InstallKeybdHook
-
-
 ~+#A::Media_Prev
 ~+#D::Media_Next
 ~+#W::Media_Play_Pause
