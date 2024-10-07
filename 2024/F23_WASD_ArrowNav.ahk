@@ -10,4 +10,6 @@ F23 & D::Right
 F23 & S::Down
 F23 & W::Up
 
-F23 & E::Enter
+F23 & Q::Media_Prev
+F23 & E::Media_Next
+F23 & 2::Media_Play_Pause
