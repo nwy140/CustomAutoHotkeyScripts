@@ -1,0 +1,7 @@
+
+
+https://www.reddit.com/r/applehelp/comments/oh02qn/how_to_assign_f4_key_to_launchpad_and_not/
+
+    Open Automator app > New document > Click on Workflow and choose it.
+
+    Library > Run AppleScript > Copy and Paste the following:
