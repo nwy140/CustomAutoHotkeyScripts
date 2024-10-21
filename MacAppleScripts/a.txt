@@ -5,3 +5,8 @@ https://www.reddit.com/r/applehelp/comments/oh02qn/how_to_assign_f4_key_to_launc
     Open Automator app > New document > Click on Workflow and choose it.
 
     Library > Run AppleScript > Copy and Paste the following:
+
+
+https://developer.apple.com/library/archive/technotes/tn2450/_index.html
+
+https://stackoverflow.com/questions/57662529/key-remapping-using-macbook-command-line
