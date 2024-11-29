@@ -75,18 +75,18 @@ YoutubeSpace(title)
 
 
 
-F23 & `::YoutubeRewind("ahk_exe msedge.exe")
-F23 & 1::YoutubeForwind("ahk_exe msedge.exe")
-F23 & 2::YoutubeSpace("ahk_exe msedge.exe")
+F23 & `::YoutubeRewind("ahk_exe discord.exe")
+F23 & 1::YoutubeForwind("ahk_exe discord.exe")
+F23 & 2::YoutubeSpace("ahk_exe discord.exe")
 
-^+1::YoutubeRewind("ahk_exe msedge.exe")
-^+2::YoutubeForwind("ahk_exe msedge.exe")
+^+1::YoutubeRewind("ahk_exe discord.exe")
+^+2::YoutubeForwind("ahk_exe discord.exe")
 ;^+3::Media_Play_Pause
-^+3::YoutubeSpace("ahk_exe msedge.exe")
+^+3::YoutubeSpace("ahk_exe discord.exe")
 
-Media_Play_Pause::YoutubeSpace("ahk_exe msedge.exe")
+Media_Play_Pause::YoutubeSpace("ahk_exe discord.exe")
 
-Media_Next::YoutubeForwind("ahk_exe msedge.exe")
+Media_Next::YoutubeForwind("ahk_exe discord.exe")
 
-Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
+Media_Prev::YoutubeRewind("ahk_exe discord.exe")
 
