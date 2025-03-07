@@ -84,9 +84,12 @@ F23 & 2::YoutubeSpace("ahk_exe msedge.exe")
 ;^+3::Media_Play_Pause
 ^+3::YoutubeSpace("ahk_exe msedge.exe")
 
-Media_Play_Pause::YoutubeSpace("ahk_exe msedge.exe")
 
-Media_Next::YoutubeForwind("ahk_exe msedge.exe")
+*Media_Play_Pause::YoutubeSpace("ahk_exe msedge.exe")
+#Media_Play_Pause::Media_Play_Pause
 
-Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
+*Media_Next::YoutubeForwind("ahk_exe msedge.exe")
+
+*Media_Prev::YoutubeRewind("ahk_exe msedge.exe")
+
 
