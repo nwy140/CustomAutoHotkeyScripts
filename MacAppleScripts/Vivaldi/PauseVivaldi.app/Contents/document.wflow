@@ -51,34 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {}
-	tell application "System Events"
-		-- Get the name of the active application
-		set originalApp to name of first process whose frontmost is true
-	end tell
-	
-	-- Switch to Firefox
-	-- tell application "Firefox" to activate
-    tell application "Vivaldi" to activate
-
-	tell application "System Events" to keystroke space
-	
-	-- Wait briefly to ensure actions are completed
-	
-	
-	-- Switch back to the original application
-	tell application originalApp to activate
-end run
-
-
-(*
-https://stackoverflow.com/questions/19236741/using-applescript-to-execute-a-complicated-keystroke
-
-https://apple.stackexchange.com/questions/409568/how-to-use-applescript-to-type-in-a-application
-
-https://chatgpt.com/share/67ee9bb1-8b9c-8009-93bc-9bc539069f21
-
-*)</string>
+					<string>on run {}	tell application "System Events"		-- Get the name of the active application		set originalApp to name of first process whose frontmost is true	end tell		-- Switch to Firefox	-- tell application "Firefox" to activate    tell application "Vivaldi" to activate	tell application "System Events" to keystroke space		-- Wait briefly to ensure actions are completed			-- Switch back to the original application	tell application originalApp to activateend run(*https://stackoverflow.com/questions/19236741/using-applescript-to-execute-a-complicated-keystrokehttps://apple.stackexchange.com/questions/409568/how-to-use-applescript-to-type-in-a-applicationhttps://chatgpt.com/share/67ee9bb1-8b9c-8009-93bc-9bc539069f21 *)</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
