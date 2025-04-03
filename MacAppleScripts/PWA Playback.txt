@@ -6,7 +6,8 @@ on run {}
 	
 	-- Switch to Firefox
 	-- tell application "Firefox" to activate
-    tell application "Vivaldi" to activate
+	-- tell application "Vivaldi" to activate
+	-- tell application "Udemy" to activate
 
 	tell application "System Events" to keystroke (ASCII character 29) --right arrow
 	tell application "System Events" to keystroke (ASCII character 28) --left arrow
@@ -14,7 +15,6 @@ on run {}
 	tell application "System Events" to keystroke space
 	
 	-- Wait briefly to ensure actions are completed
-	delay 0.01
 	
 	-- Switch back to the original application
 	tell application originalApp to activate
