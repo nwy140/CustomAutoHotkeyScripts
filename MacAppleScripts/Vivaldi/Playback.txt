@@ -11,6 +11,8 @@ on run {}
 	tell application "System Events" to keystroke (ASCII character 29) --right arrow
 	tell application "System Events" to keystroke (ASCII character 28) --left arrow
     
+	tell application "System Events" to keystroke space
+	
 	-- Wait briefly to ensure actions are completed
 	
 	
