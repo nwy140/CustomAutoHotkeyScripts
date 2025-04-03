@@ -14,7 +14,7 @@ on run {}
 	tell application "System Events" to keystroke space
 	
 	-- Wait briefly to ensure actions are completed
-	
+	delay 0.01
 	
 	-- Switch back to the original application
 	tell application originalApp to activate
