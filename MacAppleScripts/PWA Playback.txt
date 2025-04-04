@@ -28,4 +28,7 @@ https://apple.stackexchange.com/questions/409568/how-to-use-applescript-to-type-
 
 https://chatgpt.com/share/67ee9bb1-8b9c-8009-93bc-9bc539069f21
 
+https://www.reddit.com/r/shortcuts/comments/1cxzfbc/shortcuts_is_not_allowed_to_send_keystrokes/
+https://developer.apple.com/forums/thread/696461
+
 *)
