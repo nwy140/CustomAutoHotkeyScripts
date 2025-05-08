@@ -1,0 +1,19 @@
+# https://g.co/gemini/share/ba739b91d12d Exiftool, ascending order files, change date to 2019 ascending
+
+$targetStartDate = "2010-05-08 10:00:00" # Set your desired start date and time (YYYY-MM-DD HH:MM:SS)
+$directory = "." # Current directory (or specify your path)
+$exiftoolPath = "D:\CableShare\OS\exiftool-13.29_64\exiftool.exe" # Ensure this is correct
+$i = 0 # Start at 0 for the AddSeconds function
+
+# Convert the target start date string to a DateTime object
+$startDate = [datetime]::ParseExact($targetStartDate, "yyyy-MM-dd HH:mm:ss", $null)
+
+Get-ChildItem -Path $directory -Recurse | Where-Object {$_.PSIsContainer -eq $false} | ForEach-Object {
+    $newDate = $startDate.AddSeconds($i).ToString("yyyy:MM:dd HH:mm:ss")
+    $filePath = $_.FullName
+    & $exiftoolPath "-DateTimeOriginal=$newDate" "-CreateDate=$newDate" "-ModifyDate=$newDate" "$filePath"
+    Write-Host "Processed: $($_.Name) - Set date to: $newDate"
+    $i++
+}
+
+Write-Host "Finished updating video EXIF dates starting from $($targetStartDate) with one-second increments."
