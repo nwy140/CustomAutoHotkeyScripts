@@ -1,0 +1,5 @@
+# cmd
+# for /r . %f in ("*.mp4_original" "*.mp4_exiftool_tmp") do del "%f" 
+
+# powershell
+Get-ChildItem -Path "." -Recurse -Filter "*.mp4_original" , "*.mp4_exiftool_tmp" | Remove-Item -Force
