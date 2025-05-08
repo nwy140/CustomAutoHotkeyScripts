@@ -1,0 +1,17 @@
+# https://g.co/gemini/share/ba739b91d12d Exiftool, ascending order files, change date to 2019 ascending
+
+$targetYear = "2019"
+$directory = "." # Current directory (or specify your path)
+$exiftoolPath = "D:\CableShare\OS\exiftool-13.29_64\exiftool.exe" # Updated path
+$i = 1
+
+Get-ChildItem -Path $directory -Recurse | Where-Object {$_.PSIsContainer -eq $false} | ForEach-Object {
+    $baseDate = Get-Date -Year $targetYear -Month 1 -Day 1 -Hour 0 -Minute 0 -Second 0
+    $newDate = $baseDate.AddDays($i - 1).ToString("yyyy:MM:dd HH:mm:ss")
+    $filePath = $_.FullName
+    & $exiftoolPath "-DateTimeOriginal=$newDate" "-CreateDate=$newDate" "-ModifyDate=$newDate" "$filePath"
+    Write-Host "Processed: $($_.Name) - Set date to: $newDate"
+    $i++
+}
+
+Write-Host "Finished updating video EXIF dates for $targetYear and its subfolders."
