@@ -1,6 +1,6 @@
 # https://g.co/gemini/share/ba739b91d12d Exiftool, ascending order files, change date to 2019 ascending
 
-$targetYear = "2019"
+$targetYear = "2010"
 $directory = "." # Current directory
 $exiftoolPath = "D:\CableShare\OS\exiftool-13.29_64\exiftool.exe"
 $i = 1
