@@ -12,6 +12,15 @@ F23 & 2::ControlSend, ,{space}, ahk_exe mpv.exe, mpv
 
 
 
+^+`::ControlSend, ,{left}, ahk_exe mpv.exe, mpv 
+^+1::ControlSend, ,{right}, ahk_exe mpv.exe, mpv 
+;^+3::Media_Play_Pause
+^+2::ControlSend, ,{space}, ahk_exe mpv.exe, mpv 
+
+
+
+
+
 
 
 
