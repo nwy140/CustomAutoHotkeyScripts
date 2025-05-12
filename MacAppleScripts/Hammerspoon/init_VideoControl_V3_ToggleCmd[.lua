@@ -11,6 +11,11 @@ hs.hotkey.bind({"cmd"}, "[", function()
     end
 end)
 
+-- Alternate Solution https://www.reddit.com/r/hammerspoon/comments/vklw9i/comment/iew8zum/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+hs.hotkey.bind({"cmd", "shift"}, "`", function()
+        hs.execute('shortcuts run "Play/Pause"')
+end)
+
 -- Seek Forward (Ctrl + Shift + 1)
 local seekForwardTimer = nil
 hs.hotkey.bind({"cmd", "shift"}, "1",
