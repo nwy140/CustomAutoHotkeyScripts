@@ -16,9 +16,9 @@ hs.hotkey.bind({"cmd", "shift"}, "`", function()
         hs.execute('shortcuts run "Play/Pause"')
 end)
 
--- Seek Forward (Ctrl + Shift + 1)
+-- Seek Forward (Ctrl + Shift + 2)
 local seekForwardTimer = nil
-hs.hotkey.bind({"cmd", "shift"}, "1",
+hs.hotkey.bind({"cmd", "shift"}, "2",
   function() -- keyDown
     if scriptEnabled then
       seekForwardTimer = hs.timer.doEvery(0.00001, function()
@@ -34,9 +34,9 @@ hs.hotkey.bind({"cmd", "shift"}, "1",
   end
 )
 
--- Seek Backward (Ctrl + Shift + 2)
+-- Seek Backward (Ctrl + Shift + 1)
 local seekBackwardTimer = nil
-hs.hotkey.bind({"cmd", "shift"}, "2",
+hs.hotkey.bind({"cmd", "shift"}, "1",
   function() -- keyDown
     if scriptEnabled then
       seekBackwardTimer = hs.timer.doEvery(0.00001, function()
