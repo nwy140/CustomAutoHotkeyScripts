@@ -76,7 +76,7 @@ end)
 
 -- Seek Forward (Ctrl + Shift + 2)
 local seekForwardTimerNumpad = nil
-hs.hotkey.bind({""}, "pad*",
+hs.hotkey.bind({""}, "f15",
   function() -- keyDown
     if scriptEnabledNumpad then
       seekForwardTimerNumpad = hs.timer.doEvery(0.00001, function()
@@ -94,7 +94,7 @@ hs.hotkey.bind({""}, "pad*",
 
 -- Seek Backward (Ctrl + Shift + 1)
 local seekBackwardTimerNumpad = nil
-hs.hotkey.bind({""}, "pad/",
+hs.hotkey.bind({""}, "f14",
   function() -- keyDown
     if scriptEnabledNumpad then
       seekBackwardTimerNumpad = hs.timer.doEvery(0.00001, function()
