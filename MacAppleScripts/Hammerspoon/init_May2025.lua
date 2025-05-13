@@ -109,3 +109,15 @@ hs.hotkey.bind({""}, "pad/",
     end
   end
 )
+
+
+-- PrintScreen https://github.com/skehlet/hammerspoon/blob/d85ae6adc54afa105aae5438ec2a6a20b079fad6/include/screenShot.lua#L3
+-- Make F13 (the button where PrintScreen is on PC keyboards) send ctrl-shift-cmd-4
+-- For reference: Apple Style Guide says the proper order is Control, Option, Shift, Command
+hs.hotkey.bind({}, 'f13', function()
+    hs.eventtap.keyStroke({'ctrl', 'shift', 'cmd'}, '4', 0)
+end)
+
+hs.hotkey.bind({"cmd"}, 'f13', function()
+    hs.eventtap.keyStroke({ 'shift', 'cmd'}, '3', 0)
+end)
