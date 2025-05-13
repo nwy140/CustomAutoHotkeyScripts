@@ -1,4 +1,3 @@
--- Joycon Map
 -- Global toggle flag
 local scriptEnabled = true
 
@@ -60,12 +59,22 @@ hs.hotkey.bind({"cmd", "shift"}, "1",
 local scriptEnabledNumpad = true
 
 -- Toggle hotkey: Cmd + [
+hs.hotkey.bind({"cmd"}, "[", function()
+    scriptEnabledNumpad = not scriptEnabledNumpad
+    if scriptEnabledNumpad then
+        hs.alert.show("Seek hotkeys NUMPAD ENABLED")
+    else
+        hs.alert.show("Seek hotkeys NUMPAD DISABLED")
+    end
+end)
+
+-- Toggle hotkey: Cmd + [
 hs.hotkey.bind({"pad*"}, "pad=", function()
     scriptEnabledNumpad = not scriptEnabledNumpad
     if scriptEnabledNumpad then
-        hs.alert.show("Seek hotkeys ENABLED")
+        hs.alert.show("Seek hotkeys NUMPAD ENABLED")
     else
-        hs.alert.show("Seek hotkeys DISABLED")
+        hs.alert.show("Seek hotkeys NUMPAD DISABLED")
     end
 end)
 
