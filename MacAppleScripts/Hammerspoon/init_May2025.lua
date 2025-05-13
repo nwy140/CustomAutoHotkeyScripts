@@ -68,16 +68,6 @@
       end
   end)
 
-  -- Toggle hotkey: Cmd + [
-  hs.hotkey.bind({"pad*"}, "pad=", function()
-      scriptEnabledNumpad = not scriptEnabledNumpad
-      if scriptEnabledNumpad then
-          hs.alert.show("Seek hotkeys NUMPAD ENABLED")
-      else
-          hs.alert.show("Seek hotkeys NUMPAD DISABLED")
-      end
-  end)
-
   -- Alternate Solution https://www.reddit.com/r/hammerspoon/comments/vklw9i/comment/iew8zum/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
   hs.hotkey.bind({""}, "padclear", function()
           hs.execute('shortcuts run "Play/Pause"')
