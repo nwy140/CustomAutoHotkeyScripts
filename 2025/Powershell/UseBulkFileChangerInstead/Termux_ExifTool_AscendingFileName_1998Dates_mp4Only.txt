@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# --- Configuration --- https://g.co/gemini/share/bf83257b106c
+TARGET_YEAR="1998"
+# Current directory is represented by "."
+# exiftool is installed globally, so no specific path is needed
+# --- End Configuration ---
+
+echo "Starting EXIF date update for MP4 files in the current directory and subfolders."
+echo "Target Year: $TARGET_YEAR"
+echo "---"
+
+# Find all MP4 files, sort them numerically by leading numbers, and process
+find . -type f -name "*.mp4" | sort -V | while read -r filepath; do
+    # Extract filename for display purposes
+    filename=$(basename "$filepath")
+
+    # Get the current day count for incrementing the date
+    # We use a counter 'i' that increments with each file
+    # This loop processes files sequentially, so 'i' will represent the 'day offset'
+    # We start 'i' from 0 to represent Jan 1st, then Jan 2nd, etc.
+
+    # Calculate the date based on TARGET_YEAR and the current file's sequential number (i)
+    # The 'date' command is used to format the date
+    # We'll use a `processed_files` counter to ensure we increment the date correctly
+    if [ -z "$processed_files" ]; then
+        processed_files=0
+    fi
+
+    # Calculate new date: TARGET_YEAR-01-01 plus 'processed_files' days
+    # Example: if processed_files is 0, it's 2019-01-01
+    # if processed_files is 1, it's 2019-01-02, and so on.
+    NEW_DATE=$(date -d "$TARGET_YEAR-01-01 + $processed_files days" "+%Y:%m:%d 00:00:00")
+
+    echo "Processing: $filename - Setting date to: $NEW_DATE"
+
+    # Use exiftool to update the DateTimeOriginal, CreateDate, and ModifyDate tags
+    # The -overwrite_original option creates a backup (.original) by default,
+    # or overwrites if -overwrite_original_in_place is used.
+    # For safety, we'll let it create backups.
+    exiftool -DateTimeOriginal="$NEW_DATE" -CreateDate="$NEW_DATE" -ModifyDate="$NEW_DATE" "$filepath"
+
+    # Increment the counter for the next file
+    processed_files=$((processed_files + 1))
+done
+
+echo "---"
+echo "Finished updating .mp4 video EXIF dates for $TARGET_YEAR and its subfolders (sorted numerically)."
+echo "Backup files with '.original' extension may have been created."
