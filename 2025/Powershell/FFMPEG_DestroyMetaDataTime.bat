@@ -1,3 +1,5 @@
+REM https://chatgpt.com/share/6841081b-16fc-8009-9823-0f31475301c7
+
 @echo off
 setlocal enabledelayedexpansion
 
