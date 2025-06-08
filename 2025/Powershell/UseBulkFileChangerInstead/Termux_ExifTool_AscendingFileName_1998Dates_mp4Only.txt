@@ -1,6 +1,7 @@
+# https://g.co/gemini/share/6734d3b4ea86
 #!/bin/bash
 
-# --- Configuration --- https://g.co/gemini/share/bf83257b106c
+# --- Configuration ---
 TARGET_YEAR="1998"
 # Current directory is represented by "."
 # exiftool is installed globally, so no specific path is needed
@@ -35,10 +36,8 @@ find . -type f -name "*.mp4" | sort -V | while read -r filepath; do
     echo "Processing: $filename - Setting date to: $NEW_DATE"
 
     # Use exiftool to update the DateTimeOriginal, CreateDate, and ModifyDate tags
-    # The -overwrite_original option creates a backup (.original) by default,
-    # or overwrites if -overwrite_original_in_place is used.
-    # For safety, we'll let it create backups.
-    exiftool -DateTimeOriginal="$NEW_DATE" -CreateDate="$NEW_DATE" -ModifyDate="$NEW_DATE" "$filepath"
+    # Added -overwrite_original to prevent backup files from being created.
+    exiftool -DateTimeOriginal="$NEW_DATE" -CreateDate="$NEW_DATE" -ModifyDate="$NEW_DATE" -overwrite_original "$filepath"
 
     # Increment the counter for the next file
     processed_files=$((processed_files + 1))
@@ -46,4 +45,4 @@ done
 
 echo "---"
 echo "Finished updating .mp4 video EXIF dates for $TARGET_YEAR and its subfolders (sorted numerically)."
-echo "Backup files with '.original' extension may have been created."
+echo "No backup files with '.original' extension were created."
