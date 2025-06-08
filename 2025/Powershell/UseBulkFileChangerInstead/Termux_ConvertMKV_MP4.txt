@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# --- Configuration --- https://g.co/gemini/share/8dda81c8848e
+# Current directory is represented by "."
+# ffmpeg is installed globally, so no specific path is needed
+# --- End Configuration ---
+
+echo "Starting fast remux of MKV to MP4 files in the current directory."
+echo "This process copies video and audio streams directly without re-encoding, if compatible."
+echo "---"
+
+# Find all MKV files and process
+# Using -c copy for both video and audio ensures the fastest possible conversion (remuxing)
+# without re-encoding.
+find . -type f -name "*.mkv" | while read -r filepath; do
+    filename=$(basename "$filepath")
+    
+    # Define the output MP4 filename by replacing .mkv with .mp4
+    output_filename="${filename%.mkv}.mp4"
+    output_filepath="$(dirname "$filepath")/$output_filename"
+
+    echo "Remuxing: $filename to $output_filename"
+
+    # Use ffmpeg to remux the MKV to MP4 by copying streams
+    # -map 0 ensures all streams (video, audio, subtitles, etc.) are included
+    # -c copy copies all streams without re-encoding
+    ffmpeg -i "$filepath" -map 0 -c copy "$output_filepath"
+
+    if [ $? -eq 0 ]; then
+        echo "Successfully remuxed: $filename"
+    else
+        echo "Error remuxing: $filename (might require re-encoding due to incompatible codecs)"
+    fi
+    echo "---"
+done
+
+echo "Finished remuxing .mkv video files to .mp4."
+echo "New MP4 files are created in the same directory as the original MKV files."
