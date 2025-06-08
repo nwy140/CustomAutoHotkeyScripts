@@ -1,0 +1,20 @@
+# https://g.co/gemini/share/759be8be1b3d
+#!/bin/bash
+
+for video_file in *.mp4; do
+    if [ -f "$video_file" ]; then
+        filename=$(basename -- "$video_file")
+        name_no_ext="${filename%.*}"
+        subtitle_file="${name_no_ext}.srt"
+
+        if [ -f "$subtitle_file" ]; then
+            echo "Burning subtitles into $video_file..."
+            ffmpeg -i "$video_file" -vf "subtitles=$subtitle_file" -c:a copy "${name_no_ext}_burned.mp4"
+            echo "Finished processing $video_file"
+        else
+            echo "No subtitle file found for $video_file (looked for $subtitle_file)"
+        fi
+    fi
+done
+
+echo "Script finished."
