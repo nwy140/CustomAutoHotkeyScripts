@@ -1,4 +1,4 @@
-^j::
+#+left::
 WinGet, f_window_id, ID, A
 ;msgbox %f_window_id%
 WinActivate ahk_class Microsoft-edge
@@ -6,17 +6,15 @@ Send {left}
 WinActivate ahk_id %f_window_id%
 return
 
-^+1::
+#+right::
 WinGet, f_window_id, ID, A
 ;msgbox %f_window_id%
-WinActivate ahk_class Microsoft-edge
-Send {right}
 WinActivate ahk_id %f_window_id%
 return
 
 
 
-^+2::
+#+down::
 WinGet, f_window_id, ID, A ;msgbox %f_window_id%
 WinActivate ahk_class Microsoft-edge
 Send {space}
