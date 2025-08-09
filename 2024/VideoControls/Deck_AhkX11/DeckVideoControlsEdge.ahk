@@ -14,6 +14,9 @@ Send {right}
 WinActivate ahk_id %f_window_id%
 return
 
+; On Steam Deck, Go To Controller Settings
+; Bind A Button, ButtoN Setting, Hold turbo On
+
 
 
 
