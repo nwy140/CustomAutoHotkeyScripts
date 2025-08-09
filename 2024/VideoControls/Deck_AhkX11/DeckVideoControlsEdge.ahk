@@ -2,14 +2,15 @@
 WinGet, f_window_id, ID, A
 ;msgbox %f_window_id%
 WinActivate ahk_class Microsoft-edge
-SendRaw {left}
+Send {left}
 WinActivate ahk_id %f_window_id%
 return
 
 #+right::
 WinGet, f_window_id, ID, A
-Send {right}
 ;msgbox %f_window_id%
+WinActivate ahk_class Microsoft-edge
+Send {right}
 WinActivate ahk_id %f_window_id%
 return
 
