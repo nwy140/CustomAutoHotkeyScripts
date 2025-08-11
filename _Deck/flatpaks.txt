@@ -1,0 +1,10 @@
+com.gitfiend.GitFiend
+com.google.Chrome
+com.microsoft.Edge
+com.seafile.Client
+com.unity.UnityHub
+de.swsnr.keepmeawake
+io.github.shiftey.Desktop
+net.lutris.Lutris
+org.kde.krita
+org.telegram.desktop

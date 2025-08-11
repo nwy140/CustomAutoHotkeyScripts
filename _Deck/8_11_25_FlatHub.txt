@@ -1,0 +1,10 @@
+
+https://www.reddit.com/r/linux/comments/u3wcm7/easy_flatpak_apps_backupinstallation/
+
+
+// Backup flatpak
+flatpak list --columns=application --app > flatpaks.txt
+
+
+// Install Flatpaks
+xargs flatpak install -y < flatpaks.txt
