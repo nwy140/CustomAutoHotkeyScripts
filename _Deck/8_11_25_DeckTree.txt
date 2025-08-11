@@ -1,0 +1,29 @@
+(1)(deck@steamdeck Deck)$ tree
+.
+├── AppImg
+│   ├── ahk_x11.AppImage
+│   ├── blender-4.5.1-linux-x64.tar.xz
+│   ├── code-stable-x64-1754517409.tar.gz
+│   ├── firefox-nightly-143.0.r20250807210829-x86_64 (1).AppImage
+│   ├── Hiddify
+│   │   ├── VAccess
+│   │   ├── VAccess.ahk
+│   │   └── VAccess.sh
+│   ├── Hiddify-Linux-x64.AppImage
+│   ├── HuionTablet_LinuxDriver_v15.0.0.164.x86_64.tar.xz
+│   ├── JetBrains.Rider-2025.1.5.tar.gz
+│   └── LibreOffice-fresh.full-x86_64.AppImage
+├── FocusAccess
+│   └── AdversionUnity
+├── GitStars
+│   ├── BlenderConfigPortable
+│   └── CustomAutoHotkeyScripts
+│       └── _Deck
+│           └── Desktop
+│               ├── decky_installer.desktop
+│               └── Return.desktop
+├── NonSteam
+└── Settings
+    └── Screenshot_20250811_222056.png
+
+12 directories, 14 files
