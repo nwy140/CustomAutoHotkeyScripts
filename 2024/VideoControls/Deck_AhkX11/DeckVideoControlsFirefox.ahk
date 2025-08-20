@@ -22,6 +22,8 @@ Send {space}
 WinActivate ahk_id %f_window_id%
 return
 
+; firefox turn off media keys https://support.mozilla.org/en-US/questions/1301997
+
 ; On Steam Deck, Go To Controller Settings
 ; Bind A Button, ButtoN Setting, Hold turbo On
 
