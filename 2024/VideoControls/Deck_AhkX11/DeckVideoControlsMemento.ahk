@@ -14,6 +14,14 @@ Send {right}
 WinActivate ahk_id %f_window_id%
 return
 
+media_play_pause::
+WinGet, f_window_id, ID, A
+;msgbox %f_window_id%
+WinActivate ahk_class memento
+Send {space}
+WinActivate ahk_id %f_window_id%
+return
+
 ; On Steam Deck, Go To Controller Settings
 ; Bind A Button, ButtoN Setting, Hold turbo On
 
